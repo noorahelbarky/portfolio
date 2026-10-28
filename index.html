@@ -4,433 +4,160 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Noorah Elbarky – Portfolio</title>
-<meta name="description" content="Noorah Elbarky is a marketing student at Rutgers Business School and creative developer working in digital content, design, and community growth.">
+<meta name="description" content="Noorah Elbarky is a marketing student at Rutgers Business School, community builder, and founder testing a new venture with real customer research.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <style>
-  /* Custom horizontal scroll container for specific cards */
-  .card-scroll-container {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    gap: 12px;
-    padding-bottom: 8px;
-    scrollbar-width: thin;
-    scrollbar-color: var(--accent) var(--surface);
-  }
-  .card-scroll-container::-webkit-scrollbar {
-    height: 6px;
-  }
-  .card-scroll-container::-webkit-scrollbar-thumb {
-    background: var(--accent);
-    border-radius: 999px;
-  }
-  .card-scroll-item {
-    flex: 0 0 100%;
-    scroll-snap-align: start;
-    width: 100%;
-  }
-  .scroll-hint {
-    font-size: 0.8rem;
-    color: var(--muted);
-    text-align: center;
-    margin-top: 4px;
-    margin-bottom: 0;
-    font-style: italic;
-  }
+  .card-scroll-container{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;padding-bottom:8px;scrollbar-width:thin;scrollbar-color:var(--accent) var(--surface)}
+  .card-scroll-container::-webkit-scrollbar{height:6px}
+  .card-scroll-container::-webkit-scrollbar-thumb{background:var(--accent);border-radius:999px}
+  .card-scroll-item{flex:0 0 100%;scroll-snap-align:start;width:100%}
+  .scroll-hint{font-size:.8rem;color:var(--muted);text-align:center;margin:4px 0 0;font-style:italic}
+
+  .statstrip{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:16px;padding:20px 0;margin-top:8px;border-top:1px solid rgba(127,127,127,.25);border-bottom:1px solid rgba(127,127,127,.25)}
+  .fact strong{display:block;font-family:"Fraunces",serif;font-size:1.7rem;font-weight:400}
+  .fact span{font-size:.85rem;color:var(--muted)}
+  .case-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px;margin:0 0 32px}
+  .case{background:var(--surface);border-radius:12px;padding:20px}
+  .case h4{margin:0 0 10px;font-family:"Fraunces",serif;font-weight:500;font-size:1.1rem}
+  .case p{margin:0 0 8px;font-size:.92rem}
+  .venture-facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px;margin:16px 0}
 </style>
 </head>
 <body>
-<header>
-  <div class="wrap">
-    <a class="brand" href="#top">Noorah Elbarky</a>
-    <nav aria-label="Main">
-      <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </div>
-</header>
+<header><div class="wrap"><a class="brand" href="#top">Noorah Elbarky</a>
+<nav aria-label="Main"><a href="#about">About</a><a href="#venture">Venture</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#contact">Contact</a></nav></div></header>
 
 <main id="top">
-  <!-- Hero Section -->
-  <div class="hero">
-    <div class="wrap">
-      <div>
-        <h1>Noorah Elbarky</h1>
-        <p class="lede">Marketing student and creative developer building digital content, communities, and small ventures.</p>
-        <div class="actions">
-          <a class="btn" href="#projects">Explore my work</a>
-          <a class="btn ghost" href="#contact">Get in touch</a>
-        </div>
-      </div>
-      <div class="portrait">
-        <img src="images/headshot.png" alt="Noorah Elbarky Profile Picture">
-      </div>
+  <div class="hero"><div class="wrap">
+    <div>
+      <h1>Noorah Elbarky</h1>
+      <p class="lede">Marketing student, community builder, and founder testing a new venture with real customer research.</p>
+      <div class="actions"><a class="btn" href="#projects">Explore my work</a><a class="btn ghost" href="#contact">Get in touch</a></div>
     </div>
-  </div>
+    <div class="portrait"><img src="images/headshot.png" alt="Noorah Elbarky Profile Picture"></div>
+  </div></div>
 
-  <!-- About Section -->
-  <section class="block about" id="about">
-    <div class="wrap">
-      <h2>About</h2>
-      <div>
-        <p>I’m a marketing major at Rutgers Business School who likes turning ideas into things people actually engage with: campaigns, communities, and polished digital design.</p>
-        <p>Right now I develop interactive educational content at the Asian American Institute for Research &amp; Engagement, serve as a Canva Campus Ambassador, and help lead the North African Student Association. I also run my own digital design project, where I test ideas with real users.</p>
-      </div>
+  <div class="wrap"><div class="statstrip"><div class="fact"><strong>236,000+</strong><span>Instagram engagements for NASA</span></div><div class="fact"><strong>200+</strong><span>active NASA members</span></div><div class="fact"><strong>60+</strong><span>students at the first event</span></div><div class="fact"><strong>78</strong><span>survey responses for my venture research</span></div></div></div>
+
+  <section class="block about" id="about"><div class="wrap">
+    <h2>About</h2>
+    <div>
+      <p>I’m a marketing major at Rutgers Business School who likes turning ideas into things people actually engage with: campaigns, communities, and polished digital design.</p>
+      <p>Right now I develop interactive educational content at the Asian American Institute for Research &amp; Engagement, serve as a Canva Campus Ambassador, and help lead the North African Student Association. I also run my own digital design project, where I test ideas with real users.</p>
+      <p>I’m drawn to the space where marketing meets technology and startups. I use Canva, forms, and AI tools to prototype quickly, put concepts in front of real people, and let their answers decide what I build next.</p>
     </div>
-  </section>
+  </div></section>
 
-  <!-- Experience Section -->
-  <section class="block" id="experience">
-    <div class="wrap">
-      <h2>Experience</h2>
-      <div>
-        <article class="entry">
-          <div class="when">August 2026 – Present<br>New Brunswick, NJ</div>
-          <div>
-            <h3>Canva Campus Ambassador</h3>
-            <p class="org">Canva Ambassador Program (Canvassador)</p>
-            <ul>
-              <li>Drive adoption of Canva and visual communication tools across the university.</li>
-              <li>Create data-driven marketing campaigns and events that grow awareness and community engagement.</li>
-              <li>Curate digital content that supports brand positioning and partnerships.</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="entry">
-          <div class="when">Summer 2026<br>Remote</div>
-          <div>
-            <h3>Social Media Intern</h3>
-            <p class="org">Asian American Institute for Research &amp; Engagement</p>
-            <ul>
-              <li>Designed social media posts, flyers, and blog feature images that matched the organization’s brand and vision.</li>
-              <li>Created recap and feature posts for the Summer Program, including its Canva workshop for high school students.</li>
-              <li>Designed a presentation that high school students filled in with their own research and presented at the end of the internship.</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="entry">
-          <div class="when">March 2026 – Present<br>New Brunswick, NJ</div>
-          <div>
-            <h3>Community Outreach Chair</h3>
-            <p class="org">North African Student Association</p>
-            <ul>
-              <li>Co-founded and scaled a new student organization, applying startup principles to build a lasting cultural community.</li>
-              <li>Built the organization’s digital growth strategy with targeted content and 2D visual assets, earning 236,000+ Instagram engagements and growing membership to 200+ active students.</li>
-              <li>Managed outreach pipelines and community experiences to improve retention and visibility.</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="entry">
-          <div class="when">November 2025 – Present<br>Woodbury, NY</div>
-          <div>
-            <h3>Content Development Coordinator</h3>
-            <p class="org">Asian American Institute for Research &amp; Engagement</p>
-            <ul>
-              <li>Lead development of interactive digital educational products and multimedia presentations for corporate and institutional partners.</li>
-              <li>Work across teams on communication frameworks and content strategy focused on minority community empowerment and advocacy.</li>
-              <li>Conduct market research and consumer behavior analysis to shape messaging campaigns and content strategy.</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="entry">
-          <div class="when">September 2025 – Present<br>Personal project</div>
-          <div>
-            <h3>Creative Developer &amp; Founder</h3>
-            <p class="org">Digital Portfolio</p>
-            <ul>
-              <li>Bootstrapping an independent digital design initiative that explores business development, digital design structures, and visual storytelling.</li>
-              <li>Teaching myself digital prototyping and turning creative concepts into polished, user-facing designs to test market response.</li>
-              <li>Built live forms that gathered 70+ user responses for market validation.</li>
-            </ul>
-          </div>
-        </article>
-      </div>
+  <section class="block" id="venture"><div class="wrap">
+    <h2>Venture research</h2>
+    <div>
+      <p>I’m developing a consumer apparel venture and keeping the concept itself under wraps while I build. What I can share is the process: I’m testing the idea with real customers before I invest in it.</p>
+      <p><strong>Problem.</strong> Before building anything, I wanted evidence that shoppers have an unmet need in this space, in their own words.</p>
+      <p><strong>What I did.</strong> Designed and ran a primary-research survey that has gathered 78 responses since the start of the semester.</p>
+      <div class="venture-facts"><div class="fact"><strong>9%</strong><span>(7 of 78) rated 9 or 10 out of 10 on how often they find exactly what they’re looking for</span></div><div class="fact"><strong>82%</strong><span>(64 of 78) said they’d love to buy from a brand in this space that welcomes all backgrounds</span></div><div class="fact"><strong>Top theme</strong><span>Respondents named marketing, standing out, and finding first customers as the hardest parts of launching a brand</span></div></div>
+      <p>Open-ended answers also kept returning to fit and sizing consistency, and to quality at a fair price.</p>
+      <p><strong>Next.</strong> These results are shaping the concept before I finalize it. <!-- TODO: add one specific decision the survey changed --></p>
+      <p><a class="go" href="https://forms.gle/jmAmvPTcXjNPpLjj9" target="_blank" rel="noopener">Participate in the research &rarr;</a></p>
     </div>
-  </section>
+  </div></section>
 
-  <!-- Interactive Projects Tab Section -->
-  <section class="block" id="projects">
-    <div class="wrap">
-      <h2>Work &amp; Projects</h2>
-      <div>
-        <!-- Tab Navigation Buttons -->
-        <div class="tab-buttons" role="tablist">
-          <button class="tab-btn active" onclick="openTab(event, 'nasa-tab')" role="tab">NASA</button>
-          <button class="tab-btn" onclick="openTab(event, 'aaire-tab')" role="tab">AAIRE</button>
-          <button class="tab-btn" onclick="openTab(event, 'personal-tab')" role="tab">Independent Work</button>
+  <section class="block" id="experience"><div class="wrap"><h2>Experience</h2><div>
+<article class="entry"><div class="when">August 2026 – Present<br>New Brunswick, NJ</div><div><h3>Canva Campus Ambassador</h3><p class="org">Canva Ambassador Program (Canvassador)</p><ul><li>Drive adoption of Canva and visual communication tools across the university.</li><li>Create data-driven marketing campaigns and events that grow awareness and community engagement.</li><li>Curate digital content that supports brand positioning and partnerships.</li></ul></div></article>
+<article class="entry"><div class="when">Summer 2026<br>Remote</div><div><h3>Social Media Intern</h3><p class="org">Asian American Institute for Research &amp; Engagement</p><ul><li>Designed social media posts, flyers, and blog feature images that matched the organization’s brand and vision.</li><li>Created recap and feature posts for the Summer Program, including its Canva workshop for high school students.</li><li>Designed a presentation that high school students filled in with their own research and presented at the end of the internship.</li></ul></div></article>
+<article class="entry"><div class="when">March 2026 – Present<br>New Brunswick, NJ</div><div><h3>Community Outreach Chair</h3><p class="org">North African Student Association</p><ul><li>Co-founded and scaled a new student organization, applying startup principles to build a lasting cultural community.</li><li>Built the organization’s digital growth strategy with targeted content and 2D visual assets, earning 236,000+ Instagram engagements and growing membership to 200+ active students.</li><li>Managed outreach pipelines and community experiences to improve retention and visibility.</li></ul></div></article>
+<article class="entry"><div class="when">November 2025 – Present<br>Woodbury, NY</div><div><h3>Content Development Coordinator</h3><p class="org">Asian American Institute for Research &amp; Engagement</p><ul><li>Lead development of interactive digital educational products and multimedia presentations for corporate and institutional partners.</li><li>Work across teams on communication frameworks and content strategy focused on minority community empowerment and advocacy.</li><li>Conduct market research and consumer behavior analysis to shape messaging campaigns and content strategy.</li></ul></div></article>
+<article class="entry"><div class="when">September 2025 – Present<br>Personal project</div><div><h3>Founder &amp; Digital Designer</h3><p class="org">Digital Portfolio</p><ul><li>Bootstrapping an independent digital design initiative that explores business development, digital design structures, and visual storytelling.</li><li>Teaching myself digital prototyping and turning creative concepts into polished, user-facing designs to test market response.</li><li>Designed and ran a customer-discovery survey that gathered 78 responses for market validation.</li></ul></div></article>
+  </div></div></section>
+
+  <section class="block" id="projects"><div class="wrap">
+    <h2>Work &amp; Projects</h2>
+    <div>
+      <h3>Case studies</h3>
+      <div class="case-grid">
+<article class="case"><h4>Growing a new student org from zero</h4><p><strong>Problem.</strong> NASA was brand new, with no audience, members, or track record.</p><p><strong>What I did.</strong> Built the digital growth strategy: targeted content, 2D visual assets, event flyers and recaps, trend-format posts, and outreach pipelines.</p><p><strong>Result.</strong> 236,000+ Instagram engagements, 200+ active members, 60+ students at the first event, and a 30,000-view Meet the Team post.</p></article>
+<article class="case"><h4>Teaching design to high schoolers</h4><p><strong>Problem.</strong> AAIRE’s Summer Program students needed a hands-on way to learn design fundamentals and present their own research.</p><p><strong>What I did.</strong> Helped lead a Canva workshop, designed the presentation template students filled in with their research, and created the recap posts.</p><p><strong>Result.</strong> Students presented their own research at the end of the internship. <!-- TODO: add attendee count or feedback if you have it --></p></article>
+<article class="case"><h4>How Huda Kattan built a brand</h4><p><strong>Problem.</strong> I wanted to understand how a founder turns a personal brand into a global business.</p><p><strong>What I did.</strong> Researched and wrote a blog-style analysis, then designed it as a visual post in Canva.</p><p><strong>Result.</strong> A published written and visual case study. <a href="https://canva.link/p0nlbgg2k4ukb4q" target="_blank" rel="noopener">Read it in Canva &rarr;</a> <!-- TODO: add 1-2 key takeaways from the full blog --></p></article>
+      </div>
+      <div class="tab-buttons" role="tablist">
+        <button class="tab-btn active" onclick="openTab(event, 'nasa-tab')" role="tab">NASA</button>
+        <button class="tab-btn" onclick="openTab(event, 'aaire-tab')" role="tab">AAIRE</button>
+        <button class="tab-btn" onclick="openTab(event, 'personal-tab')" role="tab">Independent Work</button>
+      </div>
+      <div id="nasa-tab" class="tab-content active" role="tabpanel">
+        <div class="stat"><strong>236,000+</strong><span>total Instagram engagements and 200+ active members</span></div>
+        <p class="intro">Posts and flyers I designed as Community Outreach Chair. Follow along at <a href="https://www.instagram.com/rutgersnasa" target="_blank" rel="noopener">@rutgersnasa</a>.</p>
+        <div class="project-grid">
+<article class="featured-card"><img src="images/nasa-meet-team.png" alt="Meet the Team Post" class="card-img-large"><div class="card-body"><span class="tag">Instagram Campaign</span><h3><a href="https://canva.link/3ikhcys36me6a1c" target="_blank" rel="noopener">Meet the Team Post</a></h3><p>An introduction to the people behind the organization. I spent hours personally designing this post by hand. Instagram mistakenly flagged it as AI-generated due to its intricate detail!</p><p class="res">30,000 views · 1.4K profile visits</p><a href="https://canva.link/3ikhcys36me6a1c" target="_blank" rel="noopener" class="go">View design in Canva &rarr;</a></div></article>
+<article class="featured-card"><img src="images/nasa-event-1.png" alt="First Event (10/6)" class="card-img-large"><div class="card-body"><span class="tag">Event Recap</span><h3><a href="https://canva.link/arqr7hz0kii5zim" target="_blank" rel="noopener">First Event (10/6)</a></h3><p>A look back at NASA's inaugural event, which brought out 60+ students. Highlights from this milestone were also shared on LinkedIn.</p><p class="res">60+ Turnout · 7,000+ views overall</p><a href="https://canva.link/arqr7hz0kii5zim" target="_blank" rel="noopener" class="go">View design in Canva &rarr;</a></div></article>
+<article class="featured-card"><img src="images/nasa-event-2.png" alt="RU Smarter Than NASA?" class="card-img-large"><div class="card-body"><span class="tag">Event Flyer</span><h3><a href="https://canva.link/5uxfu50k0urtj1b" target="_blank" rel="noopener">RU Smarter Than NASA?</a></h3><p>Official promotional flyer designed for our trivia and culture event on 10/6.</p><a href="https://canva.link/5uxfu50k0urtj1b" target="_blank" rel="noopener" class="go">View design in Canva &rarr;</a></div></article>
+<article class="featured-card"><img src="images/nasa-post.png" alt="Trend Post (10/12)" class="card-img-large"><div class="card-body"><span class="tag">Social Media Trend</span><h3><a href="https://canva.link/dcllj36xhkx4886" target="_blank" rel="noopener">Trend Post (10/12)</a></h3><p>A fast-turnaround post built around a trending Instagram format to boost student algorithm reach.</p><p class="res">7,000+ views</p><a href="https://canva.link/dcllj36xhkx4886" target="_blank" rel="noopener" class="go">View design in Canva &rarr;</a></div></article>
         </div>
-
-        <!-- TAB 1: NASA -->
-        <div id="nasa-tab" class="tab-content active" role="tabpanel">
-          <div class="stat">
-            <strong>236,000+</strong>
-            <span>total Instagram engagements and 200+ active members</span>
-          </div>
-          <p class="intro">Posts and flyers I designed as Community Outreach Chair. Follow along at <a href="https://www.instagram.com/rutgersnasa" target="_blank" rel="noopener">@rutgersnasa</a>.</p>
-          
-          <div class="project-grid">
-            <article class="featured-card">
-              <img src="images/nasa-meet-team.png" alt="Meet the Team Post" class="card-img-large">
-              <div class="card-body">
-                <span class="tag">Instagram Campaign</span>
-                <h3><a href="https://canva.link/3ikhcys36me6a1c" target="_blank" rel="noopener">Meet the Team Post</a></h3>
-                <p>An introduction to the people behind the organization. I spent hours personally designing this post by hand. Instagram mistakenly flagged it as AI-generated due to its intricate detail!</p>
-                <p class="res">30,000 views · 1.4K profile visits</p>
-                <a href="https://canva.link/3ikhcys36me6a1c" target="_blank" rel="noopener" class="go">View design in Canva &rarr;</a>
-              </div>
-            </article>
-
-            <article class="featured-card">
-              <img src="images/nasa-event-1.png" alt="First Event (10/6)" class="card-img-large">
-              <div class="card-body">
-                <span class="tag">Event Recap</span>
-                <h3><a href="https://canva.link/arqr7hz0kii5zim" target="_blank" rel="noopener">First Event (10/6)</a></h3>
-                <p>A look back at NASA's inaugural event, which brought out 60+ students. Highlights from this milestone were also shared on LinkedIn.</p>
-                <p class="res">60+ Turnout · 7,000+ views overall</p>
-                <a href="https://canva.link/arqr7hz0kii5zim" target="_blank" rel="noopener" class="go">View design in Canva &rarr;</a>
-              </div>
-            </article>
-
-            <article class="featured-card">
-              <img src="images/nasa-event-2.png" alt="RU Smarter Than NASA?" class="card-img-large">
-              <div class="card-body">
-                <span class="tag">Event Flyer</span>
-                <h3><a href="https://canva.link/5uxfu50k0urtj1b" target="_blank" rel="noopener">RU Smarter Than NASA?</a></h3>
-                <p>Official promotional flyer designed for our trivia and culture event on 10/6.</p>
-                <a href="https://canva.link/5uxfu50k0urtj1b" target="_blank" rel="noopener" class="go">View design in Canva &rarr;</a>
-              </div>
-            </article>
-
-            <article class="featured-card">
-              <img src="images/nasa-post.png" alt="Trend Post (10/12)" class="card-img-large">
-              <div class="card-body">
-                <span class="tag">Social Media Trend</span>
-                <h3><a href="https://canva.link/dcllj36xhkx4886" target="_blank" rel="noopener">Trend Post (10/12)</a></h3>
-                <p>A fast-turnaround post built around a trending Instagram format to boost student algorithm reach.</p>
-                <p class="res">7,000+ views</p>
-                <a href="https://canva.link/dcllj36xhkx4886" target="_blank" rel="noopener" class="go">View design in Canva &rarr;</a>
-              </div>
-            </article>
-          </div>
+      </div>
+      <div id="aaire-tab" class="tab-content" role="tabpanel">
+        <p class="intro">Flyers, recaps, and blog graphics created as Social Media Intern and Content Development Coordinator at AAIRE.</p>
+        <div class="project-grid">
+<article class="featured-card"><img src="images/aaire-healing-circles.png" alt="Healing Circles Flyer" class="card-img-large"><div class="card-body"><span class="tag">Program Flyer</span><h3><a href="https://canva.link/05cgaczds3fxy6z" target="_blank" rel="noopener">Healing Circles Flyer</a></h3><p>Promotional visual for the Healing Circles program, designed to convey warmth and community care.</p><a href="https://canva.link/05cgaczds3fxy6z" target="_blank" rel="noopener" class="go">View design in Canva &rarr;</a></div></article>
+<article class="featured-card"><img src="images/aaire-townhall.png" alt="AAIRE Townhall Flyer" class="card-img-large"><div class="card-body"><span class="tag">Event Flyer</span><h3><a href="https://canva.link/ituzj8vmldfvfid" target="_blank" rel="noopener">AAIRE Townhall Flyer</a></h3><p>A clean, branded poster created for AAIRE’s community-wide Townhall meeting.</p><a href="https://canva.link/ituzj8vmldfvfid" target="_blank" rel="noopener" class="go">View design in Canva &rarr;</a></div></article>
+<article class="featured-card"><img src="images/aaire-intern-feature.png" alt="High School Canva Workshop" class="card-img-large"><div class="card-body"><span class="tag">Workshop &amp; Event Recap</span><h3><a href="https://canva.link/1f6jwmxs8l7tqnu" target="_blank" rel="noopener">High School Canva Workshop</a></h3><p>Recap graphics for the summer program event where I helped lead a workshop teaching high school students design fundamentals on Canva.</p><a href="https://canva.link/1f6jwmxs8l7tqnu" target="_blank" rel="noopener" class="go">View design in Canva &rarr;</a></div></article>
+<article class="featured-card"><img src="images/aaire-blog-1.png" alt="Summer Program Feature" class="card-img-large"><div class="card-body"><span class="tag">Intern Feature</span><h3><a href="https://canva.link/pscafpytwj6f6or" target="_blank" rel="noopener">Summer Program Feature</a></h3><p>A highlight post from AAIRE's Summer Program celebrating team achievements.</p><a href="https://canva.link/pscafpytwj6f6or" target="_blank" rel="noopener" class="go">View design in Canva &rarr;</a></div></article>
+<article class="featured-card"><img src="images/aaire-blog-2.png" alt="AAIRE Blog Feature Graphics" class="card-img-large"><div class="card-body"><span class="tag">Blog Header Series</span><h3>AAIRE Blog Feature Graphics</h3><p>A set of header graphics tailored to match AAIRE’s mission while maintaining a modern, cohesive brand aesthetic.</p><div class="links"><a href="https://canva.link/lord1n56z7h213v" target="_blank" rel="noopener">Blog Graphic 1 &rarr;</a><a href="https://canva.link/c9atx86cyskgr6v" target="_blank" rel="noopener">Blog Graphic 2 &rarr;</a><a href="https://canva.link/7mwbo2o3ldax1ij" target="_blank" rel="noopener">Blog Graphic 3 &rarr;</a></div></div></article>
         </div>
-
-        <!-- TAB 2: AAIRE -->
-        <div id="aaire-tab" class="tab-content" role="tabpanel">
-          <p class="intro">Flyers, recaps, and blog graphics created as Social Media Intern and Content Development Coordinator at AAIRE.</p>
-          
-          <div class="project-grid">
-            <article class="featured-card">
-              <img src="images/aaire-healing-circles.png" alt="Healing Circles Flyer" class="card-img-large">
-              <div class="card-body">
-                <span class="tag">Program Flyer</span>
-                <h3><a href="https://canva.link/05cgaczds3fxy6z" target="_blank" rel="noopener">Healing Circles Flyer</a></h3>
-                <p>Promotional visual for the Healing Circles program, designed to convey warmth and community care.</p>
-                <a href="https://canva.link/05cgaczds3fxy6z" target="_blank" rel="noopener" class="go">View design in Canva &rarr;</a>
-              </div>
-            </article>
-
-            <article class="featured-card">
-              <img src="images/aaire-townhall.png" alt="AAIRE Townhall Flyer" class="card-img-large">
-              <div class="card-body">
-                <span class="tag">Event Flyer</span>
-                <h3><a href="https://canva.link/ituzj8vmldfvfid" target="_blank" rel="noopener">AAIRE Townhall Flyer</a></h3>
-                <p>A clean, branded poster created for AAIRE’s community-wide Townhall meeting.</p>
-                <a href="https://canva.link/ituzj8vmldfvfid" target="_blank" rel="noopener" class="go">View design in Canva &rarr;</a>
-              </div>
-            </article>
-
-            <article class="featured-card">
-              <img src="images/aaire-intern-feature.png" alt="High School Canva Workshop" class="card-img-large">
-              <div class="card-body">
-                <span class="tag">Workshop &amp; Event Recap</span>
-                <h3><a href="https://canva.link/1f6jwmxs8l7tqnu" target="_blank" rel="noopener">High School Canva Workshop</a></h3>
-                <p>Recap graphics for the summer program event where I helped lead a workshop teaching high school students design fundamentals on Canva.</p>
-                <a href="https://canva.link/1f6jwmxs8l7tqnu" target="_blank" rel="noopener" class="go">View design in Canva &rarr;</a>
-              </div>
-            </article>
-
-            <article class="featured-card">
-              <img src="images/aaire-blog-1.png" alt="Summer Program Feature" class="card-img-large">
-              <div class="card-body">
-                <span class="tag">Intern Feature</span>
-                <h3><a href="https://canva.link/pscafpytwj6f6or" target="_blank" rel="noopener">Summer Program Feature</a></h3>
-                <p>A highlight post from AAIRE's Summer Program celebrating team achievements.</p>
-                <a href="https://canva.link/pscafpytwj6f6or" target="_blank" rel="noopener" class="go">View design in Canva &rarr;</a>
-              </div>
-            </article>
-
-            <article class="featured-card">
-              <img src="images/aaire-blog-2.png" alt="AAIRE Blog Feature Graphics" class="card-img-large">
-              <div class="card-body">
-                <span class="tag">Blog Header Series</span>
-                <h3>AAIRE Blog Feature Graphics</h3>
-                <p>A set of header graphics tailored to match AAIRE’s mission while maintaining a modern, cohesive brand aesthetic.</p>
-                <div class="links">
-                  <a href="https://canva.link/lord1n56z7h213v" target="_blank" rel="noopener">Blog Graphic 1 &rarr;</a>
-                  <a href="https://canva.link/c9atx86cyskgr6v" target="_blank" rel="noopener">Blog Graphic 2 &rarr;</a>
-                  <a href="https://canva.link/7mwbo2o3ldax1ij" target="_blank" rel="noopener">Blog Graphic 3 &rarr;</a>
-                </div>
-              </div>
-            </article>
-          </div>
-        </div>
-
-        <!-- TAB 3: INDEPENDENT / CANVA -->
-        <div id="personal-tab" class="tab-content" role="tabpanel">
-          <p class="intro">Self-initiated concepts, beauty marketing analyses, and campus ambassador campaigns. Explore more of my creative work at <a href="https://www.instagram.com/noorahs_portfolio" target="_blank" rel="noopener">@noorahs_portfolio</a>.</p>
-          
-          <div class="project-grid">
-            <article class="featured-card">
-              <img src="images/canva-mock-campaign-1.png" alt="Cafe Habibti Campaign" class="card-img-large">
-              <div class="card-body">
-                <span class="tag">Mock Campaign</span>
-                <h3><a href="https://canva.link/01sd4c2eit7u36i" target="_blank" rel="noopener">Cafe Habibti (NYC)</a></h3>
-                <p>A full marketing campaign concept designed for a boutique NYC café, demonstrating brand identity, digital layout, and visual strategy.</p>
-                <a href="https://canva.link/01sd4c2eit7u36i" target="_blank" rel="noopener" class="go">View design in Canva &rarr;</a>
-              </div>
-            </article>
-
-            <!-- Scrollable Card for Mock Campaign Series II -->
-            <article class="featured-card">
-              <div class="card-scroll-container">
-                <div class="card-scroll-item">
-                  <img src="images/canva-mock-campaign-2.png" alt="Mock Campaign Series II - Slide 1" class="card-img-large">
-                </div>
-                <div class="card-scroll-item">
-                  <img src="images/canva-mock-campaign-1.png" alt="Mock Campaign Series II - Slide 2" class="card-img-large">
-                </div>
-              </div>
-              <p class="scroll-hint">← Swipe or scroll horizontally to view more →</p>
-              <div class="card-body">
-                <span class="tag">Creative Campaign</span>
-                <h3>Mock Campaign Series II</h3>
-                <p>An additional visual design prototype exploring brand narrative and audience engagement channels.</p>
-              </div>
-            </article>
-
-            <article class="featured-card">
-              <img src="images/canva-personal-project.png" alt="Portfolio Insta Project" class="card-img-large">
-              <div class="card-body">
-                <span class="tag">Personal Project</span>
-                <h3>Portfolio Insta Project</h3>
-                <p>Got recognized by Canva, creating multiple digital design projects on Instagram. Still active now <a href="https://www.instagram.com/noorahs_portfolio" target="_blank" rel="noopener">@noorahs_portfolio</a>.</p>
-              </div>
-            </article>
-
-            <article class="featured-card">
-              <img src="images/canva-huda-beauty.png" alt="Huda Beauty Case Study" class="card-img-large">
-              <div class="card-body">
-                <span class="tag">Brand Strategy Analysis</span>
-                <h3><a href="https://canva.link/p0nlbgg2k4ukb4q" target="_blank" rel="noopener">Huda Beauty Case Study</a></h3>
-                <p>A written and visual blog post breakdown analyzing how founder Huda Kattan built a global cosmetics empire through personal branding.</p>
-                <a href="https://canva.link/p0nlbgg2k4ukb4q" target="_blank" rel="noopener" class="go">View design in Canva &rarr;</a>
-              </div>
-            </article>
-
-            <!-- New Venture Concept / Research Survey Card -->
-            <article class="featured-card">
-              <div class="card-body" style="justify-content: center; text-align: center; padding: 48px 20px;">
-                <span class="tag" style="align-self: center;">Market Validation</span>
-                <h3>New Venture Concept Research</h3>
-                <p>Conducting primary market research for an upcoming startup concept to test consumer demand and value propositions.</p>
-                <div class="links" style="margin-top: 16px;">
-                  <a href="https://forms.gle/jmAmvPTcXjNPpLjj9" target="_blank" rel="noopener" class="btn" style="display: inline-block; padding: 10px 20px; border-radius: 999px; background: var(--btn-bg); color: var(--btn-fg); text-decoration: none; font-weight: 600;">Participate in Research &rarr;</a>
-                </div>
-                <p style="font-size: 0.88rem; color: var(--muted); margin-top: 14px; line-height: 1.5;">I’ve been conducting this primary market research campaign since the beginning of the semester to evaluate stakeholder perspectives before finalizing my new venture. It currently houses 80 active participant responses.</p>
-              </div>
-            </article>
-          </div>
+      </div>
+      <div id="personal-tab" class="tab-content" role="tabpanel">
+        <p class="intro">Self-initiated concepts, beauty marketing analyses, and campus ambassador campaigns. Explore more of my creative work at <a href="https://www.instagram.com/noorahs_portfolio" target="_blank" rel="noopener">@noorahs_portfolio</a>.</p>
+        <div class="project-grid">
+<article class="featured-card"><img src="images/canva-mock-campaign-1.png" alt="Cafe Habibti Campaign" class="card-img-large"><div class="card-body"><span class="tag">Personal Project · Mock Campaign</span><h3><a href="https://canva.link/01sd4c2eit7u36i" target="_blank" rel="noopener">Cafe Habibti (NYC)</a></h3><p>A self-initiated marketing campaign concept for a boutique NYC café, demonstrating brand identity, digital layout, and visual strategy.</p><a href="https://canva.link/01sd4c2eit7u36i" target="_blank" rel="noopener" class="go">View design in Canva &rarr;</a></div></article>
+<article class="featured-card"><div class="card-scroll-container"><div class="card-scroll-item"><img src="images/canva-mock-campaign-2.png" alt="Mock Campaign Series II - Slide 1" class="card-img-large"></div>
+<!-- TODO: slide 2 below reuses the Cafe Habibti image; swap in the real Series II slide 2 file -->
+<div class="card-scroll-item"><img src="images/canva-mock-campaign-1.png" alt="Mock Campaign Series II - Slide 2" class="card-img-large"></div></div>
+<p class="scroll-hint">← Swipe or scroll horizontally to view more →</p><div class="card-body"><span class="tag">Creative Campaign</span><h3>Mock Campaign Series II</h3><p>An additional visual design prototype exploring brand narrative and audience engagement channels.</p></div></article>
+<article class="featured-card"><img src="images/canva-personal-project.png" alt="Portfolio Insta Project" class="card-img-large"><div class="card-body"><span class="tag">Personal Project</span><h3>Portfolio Insta Project</h3><p>Got recognized by Canva, creating multiple digital design projects on Instagram. Still active now <a href="https://www.instagram.com/noorahs_portfolio" target="_blank" rel="noopener">@noorahs_portfolio</a>.</p></div></article>
+<article class="featured-card"><img src="images/canva-huda-beauty.png" alt="Huda Beauty Case Study" class="card-img-large"><div class="card-body"><span class="tag">Brand Strategy Analysis</span><h3><a href="https://canva.link/p0nlbgg2k4ukb4q" target="_blank" rel="noopener">Huda Beauty Case Study</a></h3><p>A written and visual blog post breakdown analyzing how founder Huda Kattan built a global cosmetics empire through personal branding.</p><a href="https://canva.link/p0nlbgg2k4ukb4q" target="_blank" rel="noopener" class="go">View design in Canva &rarr;</a></div></article>
         </div>
       </div>
     </div>
-  </section>
+  </div></section>
 
-  <!-- Education Section -->
-  <section class="block edu" id="education">
-    <div class="wrap">
-      <h2>Education</h2>
-      <div>
-        <h3>B.S. in Marketing</h3>
-        <p>Rutgers Business School, The State University of New Jersey</p>
-        <p class="muted">Expected May 2029 · GPA 3.5/4.0 · Dean’s List 2025–2026</p>
-        <p class="muted">Canvassador (Canva Campus Ambassador) and Community Outreach Chair, North African Student Association</p>
-      </div>
-    </div>
-  </section>
+  <section class="block edu" id="education"><div class="wrap"><h2>Education</h2><div>
+    <h3>B.S. in Marketing</h3>
+    <p>Rutgers Business School, The State University of New Jersey</p>
+    <p class="muted">Expected May 2029 · GPA 3.5/4.0 · Dean’s List 2025–2026</p>
+    <p class="muted">Canvassador (Canva Campus Ambassador) and Community Outreach Chair, North African Student Association</p>
+  </div></div></section>
 
-  <!-- Skills Section -->
-  <section class="block skills" id="skills">
-    <div class="wrap">
-      <h2>Skills</h2>
-      <dl>
-        <dt>Digital</dt>
-        <dd><ul class="tags"><li>Canva (advanced)</li><li>Design</li><li>Content strategy</li><li>Social media analytics</li></ul></dd>
-        <dt>Strengths</dt>
-        <dd><ul class="tags"><li>Entrepreneurial execution</li><li>Rapid upskilling</li><li>Market strategy</li><li>Cross-functional collaboration</li><li>Interpersonal communication (LinkedIn certificate)</li><li>Arabic (conversational)</li></ul></dd>
-        <dt>Interests</dt>
-        <dd><ul class="tags"><li>Creation</li><li>Tech innovation</li><li>Digital storytelling</li></ul></dd>
-      </dl>
-    </div>
-  </section>
+  <section class="block skills" id="skills"><div class="wrap"><h2>Skills</h2><dl>
+    <dt>Digital</dt><dd><ul class="tags"><li>Canva (advanced)</li><li>Design</li><li>Content strategy</li><li>Social media analytics</li><li>Customer discovery</li><li>Survey design</li></ul></dd>
+    <dt>Strengths</dt><dd><ul class="tags"><li>Entrepreneurial execution</li><li>Rapid upskilling</li><li>Market strategy</li><li>Cross-functional collaboration</li><li>Interpersonal communication (LinkedIn certificate)</li><li>Arabic (conversational)</li></ul></dd>
+    <dt>Interests</dt><dd><ul class="tags"><li>Creation</li><li>Tech innovation</li><li>Digital storytelling</li></ul></dd>
+  </dl></div></section>
 
-  <!-- Contact Section with Direct Form -->
-  <section class="block contact" id="contact">
-    <div class="wrap">
-      <h2>Contact</h2>
-      <div>
-        <p>Have a project, an opportunity, or an idea to test? Send me a note directly below or reach out via my links.</p>
-        <ul>
-          <li><span>Email</span><a href="mailto:noorahelbarky@icloud.com">noorahelbarky@icloud.com</a></li>
-          <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/noorahelbarky" target="_blank" rel="noopener">linkedin.com/in/noorahelbarky</a></li>
-          <li><span>Instagram</span><a href="https://www.instagram.com/noorahs_portfolio" target="_blank" rel="noopener">@noorahs_portfolio</a></li>
-        </ul>
-
-        <form action="https://formspree.io/f/noorahelbarky" method="POST" class="contact-form">
-          <div class="form-group">
-            <label for="name">Your Name</label>
-            <input type="text" id="name" name="name" required placeholder="Name">
-          </div>
-          <div class="form-group">
-            <label for="email">Your Email</label>
-            <input type="email" id="email" name="email" required placeholder="name@example.com">
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="4" required placeholder="Write your message here..."></textarea>
-          </div>
-          <button type="submit" class="btn">Send Message</button>
-        </form>
-      </div>
-    </div>
-  </section>
+  <section class="block contact" id="contact"><div class="wrap"><h2>Contact</h2><div>
+    <p>Have a project, an opportunity, or an idea to test? Send me a note directly below or reach out via my links.</p>
+    <ul>
+      <li><span>Email</span><a href="mailto:noorahelbarky@icloud.com">noorahelbarky@icloud.com</a></li>
+      <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/noorahelbarky" target="_blank" rel="noopener">linkedin.com/in/noorahelbarky</a></li>
+      <li><span>Instagram</span><a href="https://www.instagram.com/noorahs_portfolio" target="_blank" rel="noopener">@noorahs_portfolio</a></li>
+    </ul>
+    <!-- TODO: confirm this Formspree URL; real form IDs look like /f/xyzabcde -->
+    <form action="https://formspree.io/f/noorahelbarky" method="POST" class="contact-form">
+      <div class="form-group"><label for="name">Your Name</label><input type="text" id="name" name="name" required placeholder="Name"></div>
+      <div class="form-group"><label for="email">Your Email</label><input type="email" id="email" name="email" required placeholder="name@example.com"></div>
+      <div class="form-group"><label for="message">Message</label><textarea id="message" name="message" rows="4" required placeholder="Write your message here..."></textarea></div>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </div></div></section>
 </main>
 
-<footer>
-  <div class="wrap">© 2026 Noorah Elbarky</div>
-</footer>
+<footer><div class="wrap">© 2026 Noorah Elbarky</div></footer>
 
-<!-- Tab Switcher Script -->
 <script>
 function openTab(evt, tabName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tab-content");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].classList.remove("active");
-  }
-  tablinks = document.getElementsByClassName("tab-btn");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].classList.remove("active");
-  }
+  var i, c = document.getElementsByClassName("tab-content"), b = document.getElementsByClassName("tab-btn");
+  for (i = 0; i < c.length; i++) c[i].classList.remove("active");
+  for (i = 0; i < b.length; i++) b[i].classList.remove("active");
   document.getElementById(tabName).classList.add("active");
   evt.currentTarget.classList.add("active");
 }
